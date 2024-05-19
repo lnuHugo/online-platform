@@ -1,0 +1,27 @@
+.single-course-page {
+    background-color: #2B2B2B;
+    padding: 2em 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-course-page h1 {
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.single-course-page p {
+    margin-bottom: 0.5em;
+}
+
+.single-course-page button {
+    margin: 2em;
+    cursor: pointer;
+}
+
+.video-div {
+    width: 500px;
+    height: 281px;
+}

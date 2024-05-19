@@ -1,0 +1,17 @@
+.sign-in-div {
+    background-color: #2B2B2B;
+    padding: 5em 2em;
+    color: white;
+}
+
+.sign-in-div .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B2B2B;
+}
+
+.sign-in-div h1 {
+    margin: 0 0 2em 0;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+.user-courses {
+    padding: 2em 0em;
+    width: 100%;
+}
+
+.user-courses h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.user-course {
+    padding: 1em 2em;
+    margin: 2em;
+    border: 1px solid #858585;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-course h3, p {
+    margin: 1rem;
+}
+
+.btn-div {
+    gap: 2em;
+}
+
+.btn-div button {
+    cursor: pointer;
+    padding: 1em 2em;
+    margin-left: 2em;
+}
+
+.btn-div button a {
+    color: white;
+    text-decoration: none;
+}

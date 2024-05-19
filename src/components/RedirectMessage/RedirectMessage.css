@@ -1,0 +1,13 @@
+.text-message-div {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.success {
+    background-color: #CE80FF;
+}
+
+.error {
+    background-color: #414141;
+    color: white;
+}

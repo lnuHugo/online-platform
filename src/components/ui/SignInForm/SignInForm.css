@@ -1,0 +1,41 @@
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.sign-in-form div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sign-in-form div input {
+    border-radius: 20px;
+    border: 1px solid #858585;
+    padding: 1em 1em;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.sign-in-form div input::placeholder {
+    color: #B3B3B3;
+}
+
+.sign-in-form button {
+    border-radius: 20px;
+    border: none;
+    padding: 1em 4em;
+    background-color: #CE80FF;
+    cursor: pointer;
+}
+
+.register {
+    margin-top: 0.5em;
+    color: #858585;
+}
+
+.register:hover {
+    color: #B3B3B3;
+}

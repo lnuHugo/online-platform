@@ -1,0 +1,29 @@
+.course-card {
+    padding: 5px;
+    width: 290px;
+    height: 350px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+.img-container {
+    width: 290px;
+    height: 176px;
+    background-color: #3B3B3B;
+    border-radius: 10px;
+
+}
+
+.course-information {
+    margin: 20px 0 0 15px;
+}
+
+.course-information * {
+    margin: 0 0 10px 0;
+}
+
+.course-card a {
+    text-decoration: none;
+    color: black;
+}

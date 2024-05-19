@@ -1,0 +1,56 @@
+.add-course-div {
+    width: 25%;
+    margin-top: 6em;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #B3B3B3;
+    border-left: none;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.add-course-div h2 {
+    margin: 0 0 1em 0;
+}
+
+.add-course-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.add-course-form input, button, textarea {
+    border-radius: 20px;
+    border: 1px solid #858585;
+    padding: 1em 1em;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.add-course-form textarea, ::placeholder {
+    color: #B3B3B3;
+}
+
+.add-course-form button {
+    border-radius: 20px;
+    border: none;
+    padding: 1em 4em;
+    background-color: #CE80FF;
+    cursor: pointer;
+}
+
+.fullpage {
+    padding: 3em 3em;
+}
+
+.fullpage h2 {
+    display: none;
+}
+
+.fullpage #add-btn {
+    display: none;
+}

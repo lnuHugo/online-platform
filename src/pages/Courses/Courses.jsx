@@ -1,0 +1,39 @@
+import React, { useEffect, useState } from "react";
+import "./Courses.css";
+import Header from "../../components/Header/Header";
+import CourseCard from "../../components/ui/CourseCard/CourseCard";
+import { getAllCourses } from "../../services/apiService";
+
+function Courses() {
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      const response = await getAllCourses();
+      setCourses(response.data);
+      console.log(courses);
+    };
+
+    fetchCourses();
+  }, []);
+
+  return (
+    <>
+      <Header />
+      <div className="courses-div">
+        {courses.map((course, index) => (
+          <CourseCard
+          key={index}
+            id={course.id}
+            name={course.name}
+            creator={course.instructor}
+            image={course.image}
+            price={course.price}
+          />
+        ))}
+      </div>
+    </>
+  );
+}
+
+export default Courses;

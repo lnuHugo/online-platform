@@ -1,0 +1,32 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.register-form div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.register-form div input {
+    border-radius: 20px;
+    border: 1px solid #858585;
+    padding: 1em 1em;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.register-form div input::placeholder {
+    color: #B3B3B3;
+}
+
+.register-form button {
+    border-radius: 20px;
+    border: none;
+    padding: 1em 4em;
+    background-color: #CE80FF;
+    cursor: pointer;
+}
