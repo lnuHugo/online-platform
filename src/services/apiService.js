@@ -1,6 +1,6 @@
 export async function testApiResponse() {
   try {
-    const response = await fetch("/api/test/");
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/test/`);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -16,7 +16,7 @@ export async function createCourse(coursData) {
   try {
     const token = localStorage.getItem("jwtToken");
 
-    const response = await fetch("/api/courses/", {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export async function createCourse(coursData) {
 
 export async function register(data) {
   try {
-    const response = await fetch("/api/auth/register", {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@ export async function register(data) {
 
 export async function logIn(data) {
   try {
-    const response = await fetch("/api/auth/login", {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export async function getUserCourses() {
   try {
     const token = localStorage.getItem("jwtToken");
 
-    const response = await fetch("/api/courses/user-courses", {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/user-courses`, {
       method: "GET",
       headers: {
         Authorization: token,
@@ -113,7 +113,7 @@ export async function getUserCourses() {
 
 export async function getAllCourses() {
   try {
-    const response = await fetch("/api/courses");
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses`);
 
     if (!response.ok) {
       throw new Error("Failed to fetch courses");
@@ -131,7 +131,7 @@ export async function getPurchasedCourses() {
   try {
     const token = localStorage.getItem("jwtToken");
 
-    const response = await fetch("/api/courses/purchased-courses", {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/purchased-courses`, {
       method: "GET",
       headers: {
         Authorization: token,
@@ -154,7 +154,7 @@ export async function getSingleCourse(id) {
   try {
     const token = localStorage.getItem("jwtToken");
     // Fetches course data from the server using the provided ID
-    const response = await fetch(`/api/courses/${id}`, {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/${id}`, {
       method: "GET",
       headers: {
         Authorization: token,
@@ -183,7 +183,7 @@ export async function buyCourse(id) {
   try {
     const token = localStorage.getItem("jwtToken");
 
-    const response = await fetch("/api/courses/purchase-course", {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/purchase-course`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -209,7 +209,7 @@ export async function deleteCourse(id) {
   try {
     const token = localStorage.getItem("jwtToken");
 
-    const response = await fetch(`/api/courses/delete/${id}`, {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/delete/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: token,
@@ -226,7 +226,7 @@ export async function updateCourse(id, coursData) {
   try {
     const token = localStorage.getItem("jwtToken");
 
-    const response = await fetch(`/api/courses/update/${id}`, {
+    const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/courses/update/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
