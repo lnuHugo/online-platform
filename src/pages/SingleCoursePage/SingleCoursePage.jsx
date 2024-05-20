@@ -61,8 +61,8 @@ function SingleCoursePage() {
         <p>Description: {courseData.description}</p>
         <p>Price: ${courseData.price}</p>
         <p>Category: {courseData.category}</p>
-        {courseData.image && (
-          <img src={courseData.image} alt={courseData.name} />
+        {courseData.image && !courseData.youtubeLinks && (
+          <img className="course-img" src={courseData.image} alt={courseData.name} />
         )}
         {courseData.youtubeLinks && courseData.youtubeLinks.length > 0 ? (
           <div className="video-div">

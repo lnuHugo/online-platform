@@ -21,6 +21,11 @@
     cursor: pointer;
 }
 
+.single-course-page .course-img {
+    width: 500px;
+    height: 281px;
+}
+
 .video-div {
     width: 500px;
     height: 281px;
