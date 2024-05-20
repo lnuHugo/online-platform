@@ -2,7 +2,6 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { testApiResponse, createCourse } from "./services/apiService.js";
 import Header from "./components/Header/Header.jsx";
-import CourseCard from "./components/ui/CourseCard/CourseCard.jsx";
 
 function App() {
   const [testData, setTestData] = useState(null);
@@ -26,7 +25,6 @@ function App() {
     <div className="App">
       <Header/>
       <h1>{testData}</h1>
-      <CourseCard></CourseCard>
     </div>
   );
 }
