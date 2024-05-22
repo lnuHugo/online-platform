@@ -11,7 +11,7 @@ function CourseCard({id, image, name, creator, price}) {
       <div className="course-information">
         <h4>{name}</h4>
         <p>{creator}</p>
-        <p>{price}</p>
+        <p>${price}</p>
       </div>
       </Link>
     </div>

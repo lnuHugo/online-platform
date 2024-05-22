@@ -17,12 +17,14 @@ function CourseForm({
     price: data?.price ?? "",
     category: data?.category ?? "",
     image: data?.image ?? "",
-    youtubeLinks: data?.youtubeLinks ?? "",
+    youtubeLinks: data?.youtubeLinks ? String(data.youtubeLinks) : "",
   });
 
   useEffect(() => {
     if (data) {
       setFormData(data);
+      console.log(data.youtubeLinks);
+      console.log(typeof data.youtubeLinks);
     }
   }, [data]);
 
