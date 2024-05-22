@@ -39,10 +39,10 @@ function CourseForm({
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const youtubeLinks =
-      typeof formData.youtubeLinks === "object"
-        ? JSON.stringify(formData.youtubeLinks)
-        : formData.youtubeLinks;
+    let youtubeLinks = formData.youtubeLinks;
+    if (Array.isArray(youtubeLinks)) {
+      youtubeLinks = youtubeLinks[0];
+    }
 
     const formDataUpdated = { ...formData, youtubeLinks };
 
