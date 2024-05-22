@@ -23,8 +23,6 @@ function CourseForm({
   useEffect(() => {
     if (data) {
       setFormData(data);
-      console.log(data.youtubeLinks);
-      console.log(typeof data.youtubeLinks);
     }
   }, [data]);
 
@@ -45,9 +43,6 @@ function CourseForm({
     }
 
     const formDataUpdated = { ...formData, youtubeLinks };
-
-    console.log("formData.youtubeLinks typeof: " + typeof youtubeLinks);
-    console.log("formData.youtubeLinks: " + youtubeLinks);
 
     if (style === "add-course-div") {
       const response = await createCourse(formData);
@@ -71,9 +66,6 @@ function CourseForm({
       }
     } else if (style === "fullpage") {
       const response = await updateCourse(data.id, formDataUpdated);
-      console.log("Formdata sent: " + formDataUpdated);
-      console.log("Formdata sent: " + formDataUpdated.youtubeLinks);
-      console.log("Formdata sent: " + typeof formDataUpdated.youtubeLinks);
       setMessage(response);
 
       setFormData({
