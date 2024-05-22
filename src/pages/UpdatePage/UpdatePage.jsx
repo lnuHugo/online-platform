@@ -24,7 +24,15 @@ function UpdatePage() {
   return (
     <>
       <Header></Header>
-      {message != "" && (
+      {message.status === "error" && (
+        <RedirectMessage
+          message={message.message}
+          status={message.status}
+          duration={0}
+          path={"/profile"}
+        />
+      )}
+      {message.status === "success" && (
         <RedirectMessage
           message={message.message}
           status={message.status}
