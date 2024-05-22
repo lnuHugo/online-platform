@@ -38,7 +38,7 @@ function CourseForm({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("formdata: " + formData);
+    console.log("formData.youtubeLinks typeof: " + typeof formData.youtubeLinks);
     console.log("formData.youtubeLinks: " + formData.youtubeLinks)
     if (style === "add-course-div") {
       const response = await createCourse(formData);
