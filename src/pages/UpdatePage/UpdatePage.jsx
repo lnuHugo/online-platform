@@ -26,7 +26,7 @@ function UpdatePage() {
       <Header></Header>
       {message != "" && (
         <RedirectMessage
-          message={message.data}
+          message={message.message}
           status={message.status}
           duration={1}
           path={"/profile"}
