@@ -68,15 +68,17 @@ function CourseForm({
       const response = await updateCourse(data.id, formDataUpdated);
       setMessage(response);
 
-      setFormData({
-        name: "",
-        description: "",
-        instructor: "",
-        price: "",
-        category: "",
-        image: "",
-        youtubeLinks: "",
-      });
+      if (response.status === "success") {
+        setFormData({
+          name: "",
+          description: "",
+          instructor: "",
+          price: "",
+          category: "",
+          image: "",
+          youtubeLinks: "",
+        });
+      }
     }
   };
 
