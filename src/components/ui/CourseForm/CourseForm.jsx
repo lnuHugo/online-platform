@@ -71,6 +71,9 @@ function CourseForm({
       }
     } else if (style === "fullpage") {
       const response = await updateCourse(data.id, formDataUpdated);
+      console.log("Formdata sent: " + formDataUpdated);
+      console.log("Formdata sent: " + formDataUpdated.youtubeLinks);
+      console.log("Formdata sent: " + typeof formDataUpdated.youtubeLinks);
       setMessage(response);
 
       setFormData({
