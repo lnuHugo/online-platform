@@ -38,10 +38,19 @@ function CourseForm({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("formData.youtubeLinks typeof: " + typeof formData.youtubeLinks);
-    console.log("formData.youtubeLinks: " + formData.youtubeLinks)
+
+    const youtubeLinks =
+      typeof formData.youtubeLinks === "object"
+        ? JSON.stringify(formData.youtubeLinks)
+        : formData.youtubeLinks;
+
+    const formDataUpdated = { ...formData, youtubeLinks };
+
+    console.log("formData.youtubeLinks typeof: " + typeof youtubeLinks);
+    console.log("formData.youtubeLinks: " + youtubeLinks);
+
     if (style === "add-course-div") {
-      const response = await createCourse(formData);
+      const response = await createCourse(formDataUpdated);
 
       if (typeof response === "string") {
         setSuccessMessage("");
