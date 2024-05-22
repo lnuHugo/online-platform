@@ -50,7 +50,7 @@ function CourseForm({
     console.log("formData.youtubeLinks: " + youtubeLinks);
 
     if (style === "add-course-div") {
-      const response = await createCourse(formDataUpdated);
+      const response = await createCourse(formData);
 
       if (typeof response === "string") {
         setSuccessMessage("");
@@ -70,7 +70,7 @@ function CourseForm({
         setUpdateSwitch((prevUpdateSwitch) => !prevUpdateSwitch);
       }
     } else if (style === "fullpage") {
-      const response = await updateCourse(data.id, formData);
+      const response = await updateCourse(data.id, formDataUpdated);
       setMessage(response);
 
       setFormData({
