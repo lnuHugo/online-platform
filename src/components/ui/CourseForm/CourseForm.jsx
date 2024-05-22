@@ -17,7 +17,7 @@ function CourseForm({
     price: data?.price ?? "",
     category: data?.category ?? "",
     image: data?.image ?? "",
-    youtubeLinks: data?.youtubeLinks ? String(data.youtubeLinks) : "",
+    youtubeLinks: data?.youtubeLinks ? data.youtubeLinks[0] : "",
   });
 
   useEffect(() => {
