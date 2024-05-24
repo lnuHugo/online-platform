@@ -1,25 +1,27 @@
 header {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 10em);
-    padding: 0.5em 5em;
+    align-items: center;
+    width: calc(100% - 4em);
+    padding: 1em 2em;
     background-color: #2B2B2B;
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-weight: bold;
-    margin-left: 3em;
+    margin: 0;
 }
 
 header ul {
     padding: 0;
-    width: 70%;
     display: flex;
-    justify-content: space-between;
+    gap: 2em;
     list-style: none;
-
+    margin: 0;
 }
 
 header li {
@@ -27,21 +29,36 @@ header li {
     align-items: center;
 }
 
-header a, span {
+header a {
     text-decoration: none;
     color: white;
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .sign-btn {
     background-color: #CE80FF;
-    padding: 1em 3em;
+    padding: 0.5em 1.5em;
     border-radius: 30px;
     border: none;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-.sign-btn a, span {
+.sign-btn a {
+    font-family: Inter, arial, sans-serif;
     color: black;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+header a.active {
+    color: #CE80FF;
+}
+
+.sign-btn:hover {
+    background-color: #b66fff;
 }
