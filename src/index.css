@@ -20,6 +20,6 @@ body {
 }
 
 .main-content {
-    min-height: calc(100vh - 500px);
+    flex: 1;
 }
 
