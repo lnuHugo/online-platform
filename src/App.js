@@ -33,24 +33,22 @@ function App() {
           </h1>
         </div>
         <p>
-          Welcome to our application! This platform serves as a hub for various
-          courses and educational content. We are currently{" "}
-          {apiStatus === "connected" ? "connected to" : "disconnected from"} our
-          backend server, which may impact certain features. Please bear with us
-          as we work to establish a stable connection.
+          Welcome to our Online Courses platform! Here, you have the freedom to
+          both create and purchase courses, as well as stream them at your
+          convenience. To optimize video storage, we utilize YouTube embedded
+          links, ensuring efficient access to course content.
+        </p>
+
+        <p>
+          Please note that, due to our free backend hosting, establishing a
+          connection may take some time. We appreciate your patience as the
+          application works to establish a stable connection.
         </p>
         <p>
-          As you explore the site, feel free to browse our diverse range of
-          courses and resources. Whether you're a beginner or an expert, there's
-          something here for everyone. We're continuously updating and expanding
-          our offerings, so be sure to check back regularly for new content!
-        </p>
-        <p>
-          Please note that this application is still in its early stages and is
-          far from complete. Consider this version a starting point as we
-          continue to develop and improve the platform. Your feedback is
-          valuable to us as we strive to create the best possible experience for
-          our users.
+          Our platform is still in its early stages, but we're constantly
+          working to improve and expand its features. Whether you're a beginner
+          or an expert, there's something here for everyone. So dive in,
+          explore, and enjoy the learning journey with us!"
         </p>
       </div>
       <Footer />
