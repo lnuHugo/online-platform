@@ -5,6 +5,7 @@ import "./UpdatePage.css";
 import { getSingleCourse } from "../../services/apiService";
 import { useEffect, useState } from "react";
 import RedirectMessage from "../../components/RedirectMessage/RedirectMessage";
+import Footer from "../../components/Footer/Footer";
 
 function UpdatePage() {
   const [course, setCourse] = useState({});
@@ -40,7 +41,7 @@ function UpdatePage() {
           path={"/profile"}
         />
       )}
-      <div className="update-page-div">
+      <div className="update-page-div main-content">
         <h2>Update {course.name} course</h2>
         <CourseForm
           style={"fullpage"}
@@ -48,6 +49,7 @@ function UpdatePage() {
           setMessage={setMessage}
         ></CourseForm>
       </div>
+      <Footer />
     </>
   );
 }

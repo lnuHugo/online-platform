@@ -6,6 +6,7 @@ import UserCourses from "../../components/ui/UserCourses/UserCourses";
 import RedirectMessage from "../../components/RedirectMessage/RedirectMessage";
 import { checkValidJwt } from "../../utils/checkValidJwt";
 import { Navigate } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 function Profile() {
   const [errorMessage, setErrorMessage] = useState();
@@ -45,7 +46,7 @@ function Profile() {
             status="success"
           />
         )}
-        <div className="profile-div">
+        <div className="profile-div main-content">
           <CourseForm
             setErrorMessage={setErrorMessage}
             setSuccessMessage={setSuccessMessage}
@@ -57,6 +58,7 @@ function Profile() {
             rerender={rerender}
           ></UserCourses>
         </div>
+        <Footer />
       </>
     );
   }

@@ -21,7 +21,7 @@ function Courses() {
   return (
     <>
       <Header />
-      <div className="courses-div">
+      <div className="courses-div main-content">
         {courses.map((course, index) => (
           <CourseCard
           key={index}

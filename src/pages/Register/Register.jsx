@@ -3,6 +3,7 @@ import "./Register.css";
 import Header from "../../components/Header/Header";
 import RegisterForm from "../../components/ui/RegisterForm/RegisterForm";
 import RedirectMessage from "../../components/RedirectMessage/RedirectMessage";
+import Footer from "../../components/Footer/Footer";
 
 function Register() {
   const [errorMessage, setErrorMessage] = useState();
@@ -27,7 +28,7 @@ function Register() {
           status={"error"}
         />
       )}
-      <div className="register-div">
+      <div className="register-div main-content">
         <div className="wrapper">
           <h1>Create your Coursefi account</h1>
           <RegisterForm
@@ -36,6 +37,7 @@ function Register() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

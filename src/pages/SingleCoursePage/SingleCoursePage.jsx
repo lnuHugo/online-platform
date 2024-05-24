@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import "./SingleCoursePage.css";
 import { checkValidJwt } from "../../utils/checkValidJwt";
 import RedirectMessage from "../../components/RedirectMessage/RedirectMessage";
+import Footer from "../../components/Footer/Footer";
 
 function SingleCoursePage() {
   const [courseData, setCourseData] = useState({});
@@ -55,7 +56,7 @@ function SingleCoursePage() {
           status={"error"}
         ></RedirectMessage>
       )}
-      <div className="single-course-page">
+      <div className="single-course-page main-content">
         <h1>{courseData.name}</h1>
         <p>{courseData.instructor}</p>
         <p>Description: {courseData.description}</p>
@@ -79,6 +80,7 @@ function SingleCoursePage() {
           <button onClick={handleBuy}>Buy Course</button>
         )}
       </div>
+      <Footer />
     </>
   );
 }

@@ -3,6 +3,7 @@ import "./SignIn.css";
 import Header from "../../components/Header/Header";
 import SignInForm from "../../components/ui/SignInForm/SignInForm";
 import RedirectMessage from "../../components/RedirectMessage/RedirectMessage";
+import Footer from "../../components/Footer/Footer";
 
 function SignIn() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,12 +33,13 @@ function SignIn() {
           status={"error"}
         />
       )}
-      <div className="sign-in-div">
+      <div className="sign-in-div main-content">
         <div className="wrapper">
           <h1>Sign In to Coursefi</h1>
           <SignInForm onLogin={handleLogin} setErrorMessage={setErrorMessage} setSuccessMessage={setSuccessMessage}/>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { getPurchasedCourses } from "../../services/apiService";
 import CourseCard from "../../components/ui/CourseCard/CourseCard";
 import { checkValidJwt } from "../../utils/checkValidJwt";
 import { Navigate } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 function PurchasedCourses() {
   const [courses, setCourses] = useState([]);
@@ -29,7 +30,7 @@ function PurchasedCourses() {
   return (
     <>
       <Header />
-      <div className="purchased-courses courses-div">
+      <div className="purchased-courses courses-div main-content">
         {courses.length !== 0 ? (
           courses.map((course, index) => (
             <CourseCard
@@ -45,6 +46,7 @@ function PurchasedCourses() {
           <p>You have not purchased any courses.</p>
         )}
       </div>
+      <Footer />
     </>
   );
 }
