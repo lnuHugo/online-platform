@@ -1,7 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import { testApiResponse, createCourse } from "./services/apiService.js";
+import { testApiResponse } from "./services/apiService.js";
 import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const [testData, setTestData] = useState(null);
@@ -16,15 +17,16 @@ function App() {
       }
     };
 
-    
-
     fetchData();
   }, []);
 
   return (
     <div className="App">
-      <Header/>
-      <h1>{testData}</h1>
+      <Header />
+      <div className="main-content">
+        <h1>{testData}</h1>
+      </div>
+      <Footer />
     </div>
   );
 }

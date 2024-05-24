@@ -3,6 +3,7 @@ import "./Courses.css";
 import Header from "../../components/Header/Header";
 import CourseCard from "../../components/ui/CourseCard/CourseCard";
 import { getAllCourses } from "../../services/apiService";
+import Footer from "../../components/Footer/Footer";
 
 function Courses() {
   const [courses, setCourses] = useState([]);
@@ -32,6 +33,7 @@ function Courses() {
           />
         ))}
       </div>
+      <Footer />
     </>
   );
 }
