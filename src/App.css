@@ -1,4 +1,38 @@
-.main-content h1 {
-    margin: 0;
+.start-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-main-div p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5em;
+    max-width: 600px;
     text-align: center;
 }
+
+.start-main-div p:first-of-type {
+    margin-top: 2em;
+}
+
+.status-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  .status-connected {
+    background-color: #4CAF50;
+  }
+  
+  .status-disconnected {
+    background-color: #f44336;
+  }
+  
+  .status-box h1 {
+    margin: 0;
+    color: white;
+  }
