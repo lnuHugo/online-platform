@@ -1,6 +1,6 @@
 .courses-div {
     display: grid;
-    padding: 3em 2em;
+    padding: 2em 2em;
     grid-template-columns: repeat(5, 1fr);
     gap: 2em;
     align-items: center;
