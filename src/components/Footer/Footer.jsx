@@ -39,7 +39,7 @@ function Footer({}) {
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Course Platform. All rights reserved.</p>
+          <p>&copy; 2024 Online Courses. All rights reserved.</p>
         </div>
       </footer>
     );
