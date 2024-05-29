@@ -30,7 +30,7 @@ function Register() {
       )}
       <div className="register-div main-content">
         <div className="wrapper">
-          <h1>Create your Coursefi account</h1>
+          <h1>Create your Online Courses account</h1>
           <RegisterForm
             setErrorMessage={setErrorMessage}
             setSuccessMessage={setSuccessMessage}

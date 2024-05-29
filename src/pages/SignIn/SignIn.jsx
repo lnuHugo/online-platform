@@ -35,7 +35,7 @@ function SignIn() {
       )}
       <div className="sign-in-div main-content">
         <div className="wrapper">
-          <h1>Sign In to Coursefi</h1>
+          <h1>Sign In to Online Courses</h1>
           <SignInForm onLogin={handleLogin} setErrorMessage={setErrorMessage} setSuccessMessage={setSuccessMessage}/>
         </div>
       </div>
